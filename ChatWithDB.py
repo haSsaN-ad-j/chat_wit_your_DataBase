@@ -4,8 +4,8 @@ from google import genai
 import re
 import gradio as gr
 
-engine = create_engine("mysql+mysqlconnector://root:HASSAN123321hassan@127.0.0.1:3307/supermarket")
-client = genai.Client(api_key="AIzaSyD4IcFq0ctSfJcocvc_5E5IDN6OEq9aeKg")  
+engine = create_engine("///")
+client = genai.Client(api_key="///")  
 
 def get_sql_query(question):
     prompt = f"""You are an expert SQL generator. 
@@ -132,6 +132,7 @@ with gr.Blocks(title="Chat with Supermarket DB") as demo:
     )
 
 demo.launch()
+
 
 
 
